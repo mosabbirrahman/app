@@ -16,7 +16,7 @@
                 <div class="stats shadow">
                     <div class="stat">
                       <div class="stat-title">account balance</div>
-                      <div class="stat-value">89,400</div>
+                      <div id="account-balance" class="stat-value">9400</div>
                     
                     </div>
                   </div>
@@ -30,7 +30,7 @@
 <div class="divider"></div>
 
 
-<div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+<div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
     <form class="card-body">
       <div class="form-control">
         <label class="label">
@@ -51,14 +51,36 @@
     </form>
   </div>
 
-              </div>
-            </div>
-          </div>
+
+  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <form class="card-body">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text"> cash out  amount</span>
+        </label>
+        <input id="input-cash-out" type="text" placeholder="amount" class="input input-bordered" required />
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Pin</span>
+        </label>
+        <input id="input-cash-out-pin" type="password" autocomplete="off" placeholder="pin number" class="input input-bordered" required />
+        
+      </div>
+      <div class="form-control mt-6">
+        <button id="btn-cash-out" class="btn btn-primary">cash out</button>
+      </div>
+    </form>
+  </div>
+   </div>
+   </div>
+    </div>
     </main>
 
 
 
     <script src="addMoney.js"></script>
     <script src="utilitis.js"></script>
+    <script src="cash-out.js"></script>
 </body>
 </html>
